@@ -14,8 +14,8 @@ class EditNickNameActivity : AppCompatActivity() {
         editOKBtn.setOnClickListener {
 
             val newNickName = toBeEditTxt.text.toString()
-
             val resultIntent = Intent()
+
             resultIntent.putExtra("nick", newNickName)
             setResult(Activity.RESULT_OK, resultIntent)
             finish()
